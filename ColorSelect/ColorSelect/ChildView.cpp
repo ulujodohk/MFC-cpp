@@ -28,6 +28,10 @@ BEGIN_MESSAGE_MAP(CChildView, CWnd)
 	ON_COMMAND(ID_COLOR_RED, &CChildView::OnColorRed)
 	ON_COMMAND(ID_COLOR_GREEN, &CChildView::OnColorGreen)
 	ON_COMMAND(ID_COLOR_BLUE, &CChildView::OnColorBlue)
+	ON_UPDATE_COMMAND_UI(ID_COLOR_RED, &CChildView::OnUpdateColorRed)
+	ON_UPDATE_COMMAND_UI(ID_COLOR_GREEN, &CChildView::OnUpdateColorGreen)
+	ON_UPDATE_COMMAND_UI(ID_COLOR_BLUE, &CChildView::OnUpdateColorBlue)
+	ON_WM_CONTEXTMENU()
 END_MESSAGE_MAP()
 
 
@@ -89,4 +93,37 @@ void CChildView::OnColorBlue()
 	// TODO: 여기에 명령 처리기 코드를 추가합니다.
 	m_color =RGB(0,0,255);
 	Invalidate();
+}
+
+
+void CChildView::OnUpdateColorRed(CCmdUI *pCmdUI)
+{
+	// TODO: 여기에 명령 업데이트 UI 처리기 코드를 추가합니다.
+	pCmdUI->SetCheck(m_color==RGB(255,0,0));
+}
+
+
+void CChildView::OnUpdateColorGreen(CCmdUI *pCmdUI)
+{
+	// TODO: 여기에 명령 업데이트 UI 처리기 코드를 추가합니다.
+	pCmdUI->SetCheck(m_color==RGB(0,255,0));
+}
+
+
+void CChildView::OnUpdateColorBlue(CCmdUI *pCmdUI)
+{
+	// TODO: 여기에 명령 업데이트 UI 처리기 코드를 추가합니다.
+	pCmdUI->SetCheck(m_color==RGB(0,0,255));
+}
+
+
+void CChildView::OnContextMenu(CWnd* /*pWnd*/, CPoint point)
+{
+	// TODO: 여기에 메시지 처리기 코드를 추가합니다.
+	CMenu menu;
+	menu.LoadMenuW(IDR_MAINFRAME);
+	CMenu* pMenu=menu.GetSubMenu(4);
+	pMenu->TrackPopupMenu(
+		TPM_LEFTALIGN | TPM_RIGHTBUTTON,
+		point.x, point.y, AfxGetMainWnd());
 }

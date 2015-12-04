@@ -1,5 +1,5 @@
-﻿빌드 시작: 2015-12-02 오후 11:29:08
-     1>2 노드의 "E:\MFC 프로그래밍\Visual Studio 2010 workspace\MFC prgrmming chap 06 prac\ColorSelect\ColorSelect\ColorSelect.vcxproj" 프로젝트(build 대상)입니다.
+﻿빌드 시작: 2015-12-04 오후 4:57:53
+     1>2 노드의 "E:\MFC\VisualStudio2010workspace\chap06\ColorSelect\ColorSelect\ColorSelect.vcxproj" 프로젝트(build 대상)입니다.
      1>InitializeBuildStatus:
          "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\ColorSelect.unsuccessfulbuild"을(를) 만들고 있습니다.
        ClCompile:
@@ -11,7 +11,7 @@
        ManifestResourceCompile:
          모든 출력이 최신 상태입니다.
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\MFC 프로그래밍\Visual Studio 2010 workspace\MFC prgrmming chap 06 prac\ColorSelect\Debug\ColorSelect.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\ColorSelect.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\MFC 프로그래밍\Visual Studio 2010 workspace\MFC prgrmming chap 06 prac\ColorSelect\Debug\ColorSelect.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\MFC 프로그래밍\Visual Studio 2010 workspace\MFC prgrmming chap 06 prac\ColorSelect\Debug\ColorSelect.lib" /MACHINE:X86 Debug\ColorSelect.res
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\MFC\VisualStudio2010workspace\chap06\ColorSelect\Debug\ColorSelect.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\ColorSelect.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\MFC\VisualStudio2010workspace\chap06\ColorSelect\Debug\ColorSelect.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\MFC\VisualStudio2010workspace\chap06\ColorSelect\Debug\ColorSelect.lib" /MACHINE:X86 Debug\ColorSelect.res
          Debug\ColorSelect.exe.embed.manifest.res
          Debug\ChildView.obj
          Debug\ColorSelect.obj
@@ -22,12 +22,12 @@
          모든 출력이 최신 상태입니다.
        LinkEmbedManifest:
          모든 출력이 최신 상태입니다.
-         ColorSelect.vcxproj -> E:\MFC 프로그래밍\Visual Studio 2010 workspace\MFC prgrmming chap 06 prac\ColorSelect\Debug\ColorSelect.exe
+         ColorSelect.vcxproj -> E:\MFC\VisualStudio2010workspace\chap06\ColorSelect\Debug\ColorSelect.exe
        FinalizeBuildStatus:
          "Debug\ColorSelect.unsuccessfulbuild" 파일을 삭제하고 있습니다.
          "Debug\ColorSelect.lastbuildstate"에 연결(touching)하고 있습니다.
-     1>"E:\MFC 프로그래밍\Visual Studio 2010 workspace\MFC prgrmming chap 06 prac\ColorSelect\ColorSelect\ColorSelect.vcxproj" 프로젝트를 빌드했습니다(build 대상).
+     1>"E:\MFC\VisualStudio2010workspace\chap06\ColorSelect\ColorSelect\ColorSelect.vcxproj" 프로젝트를 빌드했습니다(build 대상).
 
 빌드했습니다.
 
-경과 시간: 00:00:00.61
+경과 시간: 00:00:00.62
