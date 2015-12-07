@@ -66,10 +66,23 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	m_wndStatusBar.SetIndicators(indicators, sizeof(indicators)/sizeof(UINT));
 
 	// TODO: 도구 모음을 도킹할 수 없게 하려면 이 세 줄을 삭제하십시오.
+	/*
+	CMenu menuMain;
+	menuMain.CreateMenu();
+	CMenu menuPopup;
+	menuPopup.CreatePopupMenu();
+
+	menuPopup.AppendMenuW(MF_STRING, 201, _T("빨간색(&R)"));
+	menuPopup.AppendMenuW(MF_STRING, 202, _T("파란색(&B)"));
+	menuPopup.AppendMenuW(MF_STRING, 203, _T("초록색(&G)"));
+
+	menuMain.AppendMenuW(MF_POPUP, (UINT)menuPopup.Detach(), _T("색상(&C)"));
+	*/
+	
 	m_wndToolBar.EnableDocking(CBRS_ALIGN_ANY);
 	EnableDocking(CBRS_ALIGN_ANY);
 	DockControlBar(&m_wndToolBar);
-
+	
 
 	return 0;
 }
